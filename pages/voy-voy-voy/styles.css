@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+body, html, .movie-card, h1, h2, a, .liked, .btn-like, .watch-button, .notification {
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1F1D2A; 
+    color: #333;
+}
+  
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+  
+.movie-card {
+    background-color: #282634; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0; 
+    margin: 10px;
+    width: 100%; 
+    max-width: none; 
+    text-align: center;
+    position: relative;
+}
+
+.movie-card iframe {
+    border-radius: 10px;
+    width: 100%; 
+    height: calc(100vh - 200px);
+}
+  
+.movie-card iframe {
+    border-radius: 10px;
+}
+
+.movie-card h2 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 20px;
+}
+  
+.movie-card p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+  
+.btn-like, .watch-button {
+    background-color: #1F1D2A; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.btn-like:hover, .watch-button:hover {
+    background-color: #282634; 
+}
+  
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50; 
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    animation: fadeInNotification 0.5s ease-out;
+}
+
+@keyframes fadeInNotification {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  cursor: default;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: montserrat;
+  font-size: 40px;
+}
+
+a {
+  font-family: Montserrat;
+  position: relative;
+  text-decoration: none;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 0px;
+  left: 0%;
+  background: rgb(255, 255, 255);
+  transition: width .3s ease;
+}
+
+a:hover:after{
+  width: 100%;
+  left: 0%;
+  background: rgb(255, 255, 255);
+}
+
+.cursor {
+  width: 20px;
+  height: 20px; 
+  border-radius: 100%;
+  border: 1px solid rgb(228, 228, 228);
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 9999;
+}
+
+.cursor2 {
+  width: 7px; 
+  height: 7px; 
+  border-radius: 100%;
+  background-color: rgb(228, 228, 228);
+  opacity: .3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index: 9999;
+}
+
+.hover {
+  background-color: #282634;
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 20px;
+  height: 20px;
+  opacity: .5;
+}

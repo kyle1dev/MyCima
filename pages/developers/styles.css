@@ -1,0 +1,89 @@
+body, .sidebar, .sidebar a, .sidebar a:hover, .sidebar .closebtn, .openbtn, .openbtn:hover html, .navbar, .movie-card, h1, h2, a, .liked, .btn-like, .watch-button, .navbar, .navbar a, .notification {
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #1F1D2A;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.developers {
+    text-align: center;
+    padding: 20px;
+}
+
+.developer {
+    background-color: #282634;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.developer h2, .developer p {
+    margin: 0;
+    color: #fff;
+}
+
+.discord-link {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+.discord-link:hover {
+    color: #7289DA;
+}
+
+.fa-discord {
+    font-size: 24px;
+}
+
+.developer-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid rgb(228, 228, 228);
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 9999;
+}
+
+.cursor2 {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: rgb(228, 228, 228);
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 9999;
+}
+
+.hover {
+    background-color: #282634;
+    opacity: 0.5;
+}
+
+.cursorinnerhover {
+    width: 20px;
+    height: 20px;
+    opacity: .5;
+}
